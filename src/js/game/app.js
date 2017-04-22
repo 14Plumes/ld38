@@ -1,17 +1,20 @@
 const _ = require('lodash');
 const properties = require('./properties');
+const boot = require('./states/boot.js');
+const preloader = require('./states/preloader.js');
+const game = require('./states/game.js');
 
 const states = {
-  boot: require('./states/boot.js'),
-  preloader: require('./states/preloader.js'),
-  game: require('./states/game.js'),
+    boot,
+    preloader,
+    game,
 };
 
-const game = new Phaser.Game(properties.size.x, properties.size.y, Phaser.AUTO, 'game');
+const gameInstance = new Phaser.Game(properties.size.x, properties.size.y, Phaser.AUTO, 'game');
 
 // Automatically register each state.
 _.each(states, (state, key) => {
-  game.state.add(key, state);
+    gameInstance.state.add(key, state);
 });
 
-game.state.start('boot');
+gameInstance.state.start('boot');
