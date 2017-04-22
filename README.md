@@ -2,7 +2,28 @@
 
 Repository initialized from the Phaser.js boilerplate https://github.com/lukewilde/phaser-js-boilerplate
 
-See below the original README from the boilerplate
+
+## Clone the project
+
+```
+git clone git@github.com:14Plumes/ld38.git
+cd ld38
+npm install
+```
+
+## Start the game
+
+This will run the game in dev mode (live-reloading).
+
+```shell
+npm start
+
+```
+
+Now open http://localhost:3017/
+
+
+See below the original `README.md` from the boilerplate
 
 
 ---
