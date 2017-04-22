@@ -1,9 +1,11 @@
 {
   "name": "ld38",
+  "description": "Ludum Dare 38 submission",
   "version": "0.0.1",
   "main": "build/js/app.min.js",
   "scripts": {
-    "start": "./node_modules/.bin/grunt"
+    "start": "./node_modules/.bin/grunt",
+    "lint": "./node_modules/.bin/eslint ./src/"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,12 @@
     "grunt-pngmin": "^1.0.2",
     "lodash": "^4.6.1",
     "phaser": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
   }
 }
