@@ -1,3 +1,13 @@
+# Ludum Dare 38
+
+Repository initialized from the Phaser.js boilerplate https://github.com/lukewilde/phaser-js-boilerplate
+
+See below the original README from the boilerplate
+
+
+---
+
+
 # A Phaser.js Boilerplate
 
 A template to boost the productivity of Phaser.js game developers. Provides tools to improve code reuse, assist in development activities, and can package projects into production ready bundles.
