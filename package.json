@@ -1,17 +1,14 @@
 {
-  "name": "phaser-js-boilerplate",
-  "version": "1.1.0",
-  "description": "A Grunty Phaser.js SDK",
+  "name": "ld38",
+  "version": "0.0.1",
   "main": "build/js/app.min.js",
   "scripts": {
     "start": "./node_modules/.bin/grunt"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:lukewilde/phaser-js-boilerplate.git"
+    "url": "git@github.com:14Plumes/ld38.git"
   },
-  "author": "Luke Wilde",
-  "license": "MIT",
   "browserify-shim": {
     "./src/js/lib/stats.min.js": "Stats"
   },
