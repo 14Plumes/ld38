@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         src: ['<%= project.src %>/game/app.js'],
         dest: '<%= project.bundle %>',
         options: {
-          transform: ['browserify-shim'],
+          transform: ['browserify-shim', ['babelify', {presets: ['es2015']}]],
           watch: true,
           browserifyOptions: {
             debug: !productionBuild

@@ -1,9 +1,8 @@
-var Stats = require('../../lib/stats.min');
-var properties = require('../properties');
-var boot = {};
+const Stats = require('../../lib/stats.min');
+const properties = require('../properties');
+const boot = {};
 
 boot.create = function () {
-
   if (properties.showStats) {
     addStats(this.game);
   }
@@ -14,8 +13,7 @@ boot.create = function () {
 };
 
 function addStats(game) {
-
-  var stats = new Stats();
+  const stats = new Stats();
 
   stats.setMode(0);
 
@@ -26,8 +24,8 @@ function addStats(game) {
   document.body.appendChild(stats.domElement);
 
   // Monkey patch Phaser's update in order to correctly monitor FPS.
-  var oldUpdate = game.update;
-  game.update = function() {
+  const oldUpdate = game.update;
+  game.update = function () {
     stats.begin();
     oldUpdate.apply(game, arguments);
     stats.end();

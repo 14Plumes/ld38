@@ -1,4 +1,4 @@
-var npmProperties = require('../../../package.json');
+const npmProperties = require('../../../package.json');
 
 module.exports = {
   title: 'LD 38',
@@ -9,6 +9,6 @@ module.exports = {
   showStats: true,
   size: {
     x: 800,
-    y: 600
-  }
+    y: 600,
+  },
 };
